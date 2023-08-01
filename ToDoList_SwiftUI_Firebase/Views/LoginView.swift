@@ -8,35 +8,39 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var email = ""
-    @State var password = ""
+@StateObject var viewModel = LoginViewViewModel()
     
     var body: some View {
         NavigationView{
             VStack {
                 //Header
-                HeaderView()
+                HeaderView(
+                    title: "To Do List",
+                    subtitle: "Get things done",
+                    angle: 15,
+                    background: .pink)
                 
                 //Login Form
                 Form {
-                    TextField("Email Address", text: $email)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                    SecureField("Email Address", text: $email)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("Email Address", text: $viewModel.email)
+//                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .textFieldStyle(DefaultTextFieldStyle())
+                        .textInputAutocapitalization(.none)
                     
-                    Button {
-                        //Attempt log in
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(.blue)
-                            Text("Log In")
-                                .foregroundColor(.white)
-                                .bold()
-                            
-                        }
+                    SecureField("Password", text: $viewModel.password)
+//                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    
+                    TLButton(
+                        title: "Log In",
+                        background: .blue
+                    ) {
+                        //Attempt Login
                     }
+                    .padding()
                 }
+                .offset(y: -50)
+                
                 //Create Account
                 VStack {
                     Text("New around here?")

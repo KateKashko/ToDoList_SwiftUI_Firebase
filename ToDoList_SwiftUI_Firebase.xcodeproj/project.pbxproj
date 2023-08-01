@@ -31,6 +31,7 @@
 		93E32D032A79291E00235C27 /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E32D022A79291E00235C27 /* RegisterViewViewModel.swift */; };
 		93E32D052A792A1000235C27 /* ToDoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E32D042A792A1000235C27 /* ToDoListItemViewViewModel.swift */; };
 		93E32D072A792DC000235C27 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E32D062A792DC000235C27 /* HeaderView.swift */; };
+		93E32D092A7993E400235C27 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E32D082A7993E400235C27 /* TLButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		93E32D022A79291E00235C27 /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
 		93E32D042A792A1000235C27 /* ToDoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemViewViewModel.swift; sourceTree = "<group>"; };
 		93E32D062A792DC000235C27 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		93E32D082A7993E400235C27 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				93E32CF02A7927B500235C27 /* RegisterView.swift */,
 				93E32CF22A79281300235C27 /* ToDoListItemView.swift */,
 				93E32D062A792DC000235C27 /* HeaderView.swift */,
+				93E32D082A7993E400235C27 /* TLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				93E32CF92A79288800235C27 /* MainViewViewModel.swift in Sources */,
 				93E32CEB2A79276500235C27 /* ToDoListView.swift in Sources */,
 				93E32CF12A7927B500235C27 /* RegisterView.swift in Sources */,
+				93E32D092A7993E400235C27 /* TLButton.swift in Sources */,
 				93E32CFB2A7928A800235C27 /* ProfileViewViewModel.swift in Sources */,
 				93E32CE92A79274100235C27 /* ProfileView.swift in Sources */,
 				93E32CF52A79284100235C27 /* User.swift in Sources */,
