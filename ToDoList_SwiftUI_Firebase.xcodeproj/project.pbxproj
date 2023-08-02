@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9302D5A52A7A4DBE00DE7E9D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9302D5A42A7A4DBE00DE7E9D /* Extensions.swift */; };
 		93E32CCE2A78CF4800235C27 /* ToDoList_SwiftUI_FirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E32CCD2A78CF4800235C27 /* ToDoList_SwiftUI_FirebaseApp.swift */; };
 		93E32CD02A78CF4800235C27 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E32CCF2A78CF4800235C27 /* MainView.swift */; };
 		93E32CD22A78CF4B00235C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93E32CD12A78CF4B00235C27 /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9302D5A42A7A4DBE00DE7E9D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		93E32CCA2A78CF4800235C27 /* ToDoList_SwiftUI_Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList_SwiftUI_Firebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E32CCD2A78CF4800235C27 /* ToDoList_SwiftUI_FirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList_SwiftUI_FirebaseApp.swift; sourceTree = "<group>"; };
 		93E32CCF2A78CF4800235C27 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				93E32CD12A78CF4B00235C27 /* Assets.xcassets */,
 				93E32CDB2A7919E800235C27 /* GoogleService-Info.plist */,
 				93E32CCD2A78CF4800235C27 /* ToDoList_SwiftUI_FirebaseApp.swift */,
+				9302D5A42A7A4DBE00DE7E9D /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				93E32CFD2A7928C500235C27 /* ToDoListViewViewModel.swift in Sources */,
 				93E32D012A79290B00235C27 /* LoginViewViewModel.swift in Sources */,
 				93E32CCE2A78CF4800235C27 /* ToDoList_SwiftUI_FirebaseApp.swift in Sources */,
+				9302D5A52A7A4DBE00DE7E9D /* Extensions.swift in Sources */,
 				93E32CF72A79285200235C27 /* ToDoListItem.swift in Sources */,
 				93E32CED2A79278300235C27 /* NewItemView.swift in Sources */,
 				93E32CFF2A7928ED00235C27 /* NewItemViewViewModel.swift in Sources */,
