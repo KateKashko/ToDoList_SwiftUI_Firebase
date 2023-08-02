@@ -44,6 +44,7 @@ struct LoginView: View {
                     .padding()
                 }
                 .offset(y: -50)
+                Spacer()
                 
                 //Create Account
                 VStack {
@@ -52,7 +53,7 @@ struct LoginView: View {
                 }
                 .padding(.bottom, 50)
                 
-                Spacer()
+//                Spacer()
             }
         }
     }
