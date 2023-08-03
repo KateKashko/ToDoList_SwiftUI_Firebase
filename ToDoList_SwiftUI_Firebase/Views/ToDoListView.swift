@@ -8,43 +8,42 @@ import FirebaseFirestoreSwift
 import SwiftUI
 
 struct ToDoListView: View {
-    @StateObject var viewModel = ToDoListViewViewModel()
+    @StateObject var viewModel: ToDoListViewViewModel
     @FirestoreQuery var items: [ToDoListItem]
     
     init(userId: String) {
         
         self._items = FirestoreQuery(
-            collectionPath: "users/\(userId)/todos")
+            collectionPath: "users/\(userId)/todos"
+        )
+        self._viewModel = StateObject(wrappedValue: ToDoListViewViewModel(userId: userId))
     }
     var body: some View {
-       NavigationStack {
-           VStack {
-               List(items) { item in
-                   ToDoListItemView(item: item)
-                       .swipeActions {
-                           Button {
-                               viewModel.delete(id: item.id)
-                               
-                           } label: {
-                               Text("Delete")
-                                   .foregroundColor(.red)
-                           }
-                       }
-               }
-               .listStyle(PlainListStyle())
-               
-           }
-           .navigationTitle("To Do List")
-           .toolbar {
-               Button {
-                   viewModel.showingNewItemView = true
-               } label: {
-                   Image(systemName: "plus")
-               }
-           }
-           .sheet(isPresented: $viewModel.showingNewItemView) {
-               NewItemView(newItemPresented: $viewModel.showingNewItemView)
-           }
+        NavigationStack {
+            VStack {
+                List(items) { item in
+                    ToDoListItemView(item: item)
+                        .swipeActions {
+                            Button("Delete") {
+                                viewModel.delete(id: item.id)
+                            }
+                            .tint(.red)
+                        }
+                }
+                .listStyle(PlainListStyle())
+                
+            }
+            .navigationTitle("To Do List")
+            .toolbar {
+                Button {
+                    viewModel.showingNewItemView = true
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
+            .sheet(isPresented: $viewModel.showingNewItemView) {
+                NewItemView(newItemPresented: $viewModel.showingNewItemView)
+            }
         }
     }
 }
