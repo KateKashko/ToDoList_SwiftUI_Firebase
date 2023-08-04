@@ -115,8 +115,8 @@
 		93E32CE42A7920EA00235C27 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				93E32CCF2A78CF4800235C27 /* MainView.swift */,
 				93E32CE82A79274100235C27 /* ProfileView.swift */,
+				93E32CCF2A78CF4800235C27 /* MainView.swift */,
 				93E32CEA2A79276500235C27 /* ToDoListView.swift */,
 				93E32CEC2A79278300235C27 /* NewItemView.swift */,
 				93E32CEE2A79279D00235C27 /* LoginView.swift */,
@@ -142,11 +142,11 @@
 			children = (
 				93E32CF82A79288800235C27 /* MainViewViewModel.swift */,
 				93E32CFA2A7928A800235C27 /* ProfileViewViewModel.swift */,
+				93E32D042A792A1000235C27 /* ToDoListItemViewViewModel.swift */,
 				93E32CFC2A7928C500235C27 /* ToDoListViewViewModel.swift */,
 				93E32CFE2A7928ED00235C27 /* NewItemViewViewModel.swift */,
 				93E32D002A79290B00235C27 /* LoginViewViewModel.swift */,
 				93E32D022A79291E00235C27 /* RegisterViewViewModel.swift */,
-				93E32D042A792A1000235C27 /* ToDoListItemViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
